@@ -289,3 +289,135 @@ QFT_{9} = \frac{1}{3} \begin{pmatrix}
 --- 
 
 La **QFT para qudits** amplía la riqueza matemática del algoritmo, proporcionando mayor eficiencia y precisión en problemas específicos como estimación de fase o simulaciones de sistemas cuánticos cíclicos.
+
+
+
+
+
+### Resumen del paper: "Neutrinos as qubits and qutrits"
+
+---
+
+#### **Objetivo del paper**
+El artículo investiga cómo representar los estados de neutrinos como sistemas de qubits y qutrits dentro de la teoría de la información cuántica. Esto se logra mediante:
+1. La construcción de la esfera de Poincaré utilizando matrices de Pauli (SU(2)) para qubits y matrices de Gell-Mann (SU(3)) para qutrits.
+2. Evaluar las propiedades de entrelazamiento en sistemas de dos y tres sabores de neutrinos, y comparar las medidas de entrelazamiento entre qubits y qutrits.
+
+---
+
+#### **Principales aportes**
+1. **Representación de neutrinos como qubits**:
+   - Los estados de dos sabores de neutrinos (\(|\nu_e\rangle\), \(|\nu_\mu\rangle\)) se mapean a qubits usando la representación de SU(2).
+   - La evolución temporal de los estados se describe utilizando una superposición de autoestados de masa, con el uso de la esfera de Poincaré para representar los estados en el espacio de Bloch.
+
+2. **Representación de neutrinos como qutrits**:
+   - Los estados de tres sabores de neutrinos (\(|\nu_e\rangle\), \(|\nu_\mu\rangle\), \(|\nu_\tau\rangle\)) se mapean a qutrits en un espacio de Hilbert tridimensional \(H_3\).
+   - Se emplea SU(3) y la esfera de Poincaré generalizada para analizar estados de neutrinos, destacando las propiedades geométricas y topológicas.
+
+3. **Medidas de entrelazamiento**:
+   - Para sistemas de dos qubits, se utiliza la **concurrencia** como medida de entrelazamiento.
+   - En sistemas de qutrits, se calcula la concurrencia generalizada y la **entropía de mezcla** para evaluar la correlación entre estados de neutrinos.
+
+4. **Resultados principales**:
+   - Los sistemas de dos neutrinos con dos sabores se modelan como sistemas separables (no entrelazados) bajo ciertas condiciones.
+   - En sistemas de tres sabores, los estados entrelazados muestran una estructura más rica, permitiendo cuantificar la correlación en el espacio de Gell-Mann.
+
+---
+
+#### **Conclusiones**
+- Los neutrinos pueden representarse de manera natural como qutrits debido a su estructura de tres sabores, lo que elimina redundancias y permite una representación más precisa.
+- El marco de la información cuántica, específicamente las medidas de entrelazamiento y las herramientas geométricas (como la esfera de Poincaré), proporciona una forma poderosa de analizar las oscilaciones y el entrelazamiento de neutrinos.
+- Este enfoque abre nuevas oportunidades para estudiar propiedades cuánticas fundamentales en sistemas de partículas.
+
+### Cambios matemáticos importantes en el paper
+
+#### **1. Representación de estados de neutrinos como qubits y qutrits**
+- **Qubits (\(d=2\))**:
+  - Los estados de dos sabores de neutrinos (\(|\nu_e\rangle\) y \(|\nu_\mu\rangle\)) se representan en un espacio bidimensional:
+    \[
+    |\psi\rangle = \alpha |\nu_e\rangle + \beta |\nu_\mu\rangle, \quad \alpha, \beta \in \mathbb{C}, \quad |\alpha|^2 + |\beta|^2 = 1.
+    \]
+  - El espacio de Hilbert se analiza usando matrices de Pauli (\(SU(2)\)):
+    \[
+    \rho = \frac{1}{2}(I + \vec{r} \cdot \vec{\sigma}),
+    \]
+    donde \(\vec{\sigma} = (\sigma_x, \sigma_y, \sigma_z)\) son las matrices de Pauli, e \(\vec{r}\) es el vector de Bloch que describe la posición en la esfera de Poincaré.
+
+- **Qutrits (\(d=3\))**:
+  - Los tres sabores de neutrinos (\(|\nu_e\rangle\), \(|\nu_\mu\rangle\), \(|\nu_\tau\rangle\)) se representan como un vector en un espacio tridimensional:
+    \[
+    |\psi\rangle = \alpha |\nu_e\rangle + \beta |\nu_\mu\rangle + \gamma |\nu_\tau\rangle, \quad \alpha, \beta, \gamma \in \mathbb{C}, \quad |\alpha|^2 + |\beta|^2 + |\gamma|^2 = 1.
+    \]
+  - Se emplean matrices de Gell-Mann (\(SU(3)\)) para describir la densidad de estados:
+    \[
+    \rho = \frac{1}{3}(I + \sqrt{3} \vec{\lambda} \cdot \vec{r}),
+    \]
+    donde \(\vec{\lambda}\) son las matrices de Gell-Mann (generalización de Pauli) y \(\vec{r}\) es el vector de Bloch generalizado.
+
+---
+
+#### **2. Generalización de la esfera de Poincaré**
+- Para **qubits** (\(d=2\)), el estado se representa en la **esfera de Bloch**:
+  \[
+  \vec{r} = (\langle \sigma_x \rangle, \langle \sigma_y \rangle, \langle \sigma_z \rangle),
+  \]
+  con \(|\vec{r}| \leq 1\).
+
+- Para **qutrits** (\(d=3\)), la representación se extiende al espacio de Gell-Mann:
+  \[
+  \vec{r} = (\langle \lambda_1 \rangle, \langle \lambda_2 \rangle, \dots, \langle \lambda_8 \rangle),
+  \]
+  donde las matrices de Gell-Mann describen las direcciones en un espacio de dimensión 8, permitiendo analizar correlaciones más ricas y no triviales entre sabores de neutrinos.
+
+---
+
+#### **3. Medidas de entrelazamiento**
+- **Para qubits (\(d=2\)):**
+  - El entrelazamiento se cuantifica mediante la **concurrencia** (\(C\)), definida para un estado puro de dos qubits como:
+    \[
+    C = |\langle \psi | \tilde{\psi} \rangle|,
+    \]
+    donde \(|\tilde{\psi}\rangle\) es el estado conjugado bajo inversión de espín. Para un estado mixto, se usa:
+    \[
+    C = \max(0, \lambda_1 - \lambda_2 - \lambda_3 - \lambda_4),
+    \]
+    con \(\lambda_i\) siendo los autovalores del operador derivado de la matriz densidad.
+
+- **Para qutrits (\(d=3\)):**
+  - Se generaliza la concurrencia para sistemas de mayor dimensión utilizando operadores de intercambio simétricos. Además, se analiza el **grado de mezcla** a través de la entropía de von Neumann:
+    \[
+    S(\rho) = -\mathrm{Tr}(\rho \log \rho).
+    \]
+
+---
+
+#### **4. Evolución temporal de los estados de neutrinos**
+- **Qubits (\(d=2\))**:
+  - La evolución temporal de dos sabores de neutrinos se modela usando el operador unitario:
+    \[
+    U(t) = e^{-iHt},
+    \]
+    donde \(H\) es el Hamiltoniano en la base de sabores. Los coeficientes \(\alpha(t)\) y \(\beta(t)\) oscilan según diferencias de masas.
+
+- **Qutrits (\(d=3\))**:
+  - En tres sabores, la evolución incluye fases adicionales:
+    \[
+    |\psi(t)\rangle = U(t) |\psi(0)\rangle, \quad U(t) = e^{-iHt},
+    \]
+    pero \(H\) ahora incluye términos adicionales que representan las diferencias de masa entre los tres sabores.
+
+---
+
+#### **5. Comparación entre qubits y qutrits**
+- **Qubits**:
+  - Útiles para sistemas de dos sabores de neutrinos.
+  - Representación más limitada debido a menor dimensionalidad.
+
+- **Qutrits**:
+  - Capturan de forma más precisa la estructura de tres sabores.
+  - Representación más rica gracias al uso de \(SU(3)\) y la generalización de la esfera de Bloch.
+
+---
+
+### Conclusión matemática
+El paper introduce una transición importante al mapear los estados de neutrinos desde qubits (\(SU(2)\)) hacia qutrits (\(SU(3)\)), lo cual permite una descripción más completa de su oscilación, entrelazamiento y evolución temporal.

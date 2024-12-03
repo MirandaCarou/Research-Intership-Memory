@@ -175,7 +175,7 @@ Los qudits ofrecen un paradigma más poderoso en la computación cuántica, con 
 A pesar de ser más complejos de implementar experimentalmente, **los qudits reducen la cantidad de recursos computacionales** necesarios, ya que explotan su naturaleza multi-dimensional en representaciones, puertas y algoritmos.
 
 
-Aquí tienes una **comparativa matemática detallada** de la **Transformada Cuántica de Fourier (QFT)** para **qubits** $\(d = 2\)$ y **qudits** $\(d > 2\)$.
+ **comparativa matemática detallada** de la **Transformada Cuántica de Fourier (QFT)** para **qubits** $\(d = 2\)$ y **qudits** $\(d > 2\)$.
 
 ---
 

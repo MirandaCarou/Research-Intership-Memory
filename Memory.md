@@ -62,8 +62,7 @@
 ### **Conclusión**
 Los qudits ofrecen un paradigma más poderoso en la computación cuántica, con puertas y algoritmos optimizados para aprovechar la mayor dimensionalidad. Aunque presentan retos experimentales, su capacidad para reducir la complejidad de circuitos y optimizar algoritmos promete avances significativos en tecnologías cuánticas.
 
-
-Aquí tienes una **comparativa matemática** entre qubits y qudits, enfocándome en su representación, operación y algoritmos:
+ **comparativa matemática** entre qubits y qudits, enfocándome en su representación, operación y algoritmos:
 
 ---
 

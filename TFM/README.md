@@ -1,4 +1,4 @@
-#  (Master’s Thesis)
+# Quantum Machine Learning model based on qutrits for anomaly detection in high-energy physics data: Comparative analysis with qubit-based models and application to CERN's LHC collider. (Master’s Thesis)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8%2B-blue.svg)

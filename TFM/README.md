@@ -14,6 +14,7 @@ At least 140 collisions will be produced each time two particle bunches meet at 
 With this in mind, the project exploits the theoretical and practical advantages of utilizing qutrits in Quantum Machine Learning (QML) models for the purpose of anomaly detection in high-energy physics data, with a particular focus on the context of experiments at CERN’s Large Hadron Collider. The development of a quantum model based on qutrits is proposed, with a comparison with its qubit counterpart undertaken to evaluate its effectiveness in terms of accuracy, scalability and computational efficiency. The objective is threefold: first, to enhance comprehension of multilevel quantum systems and their capacity for the development of more compact quantum algorithms; second, to examine fresh possibilities for the analysis of complex data; and third, to collaborate in the advancement of this field.
 
 To achieve the desired objectives, a high-fidelity autoencoder structure has been utilized as a QAE reference, with CMS real jet data being employed to train the model. This model has been extrapolated to the qutrit state space, with the introduction of novel logic gates according to the parameters of this state space.
+
 ---
 
 ## 📋 Prerequisites
